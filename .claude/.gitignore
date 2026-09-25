@@ -1,0 +1,9 @@
+# Claude Code writes a lot of machine-local state here; track config only.
+*
+!.gitignore
+!settings.json
+!rules/
+!rules/**
+!skills/
+!skills/find-docs/
+!skills/find-docs/**

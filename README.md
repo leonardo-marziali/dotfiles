@@ -63,3 +63,17 @@ dotfiles push
 - Neovim configuration
 - Ghostty terminal configs
 - Tmux configuration
+- Claude Code configuration (`~/.claude`): settings, global rules, custom skills
+
+## Claude Code configuration
+
+Only the portable parts of `~/.claude` are tracked: `settings.json`, the global
+rules in `rules/`, and hand-written skills under `skills/`. Everything else in
+that directory is machine-local state (sessions, caches, history, account-synced
+skills) and is excluded by `~/.claude/.gitignore`.
+
+Plugins are not vendored. They are listed under `enabledPlugins` in
+`settings.json`, and Claude Code installs them from their marketplace on first
+run. Machine-local secrets stay out of the repo too: fish reads them from
+`~/.config/fish/conf.d/secrets.local.fish`, which is gitignored and must be
+recreated by hand on a new machine.
