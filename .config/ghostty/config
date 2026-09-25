@@ -31,6 +31,11 @@ keybind = cmd+e=text:\x05
 keybind = cmd+y=text:\x19
 # Ctrl-G (show file status)
 keybind = cmd+g=text:\x07
+# Ctrl+h, Ctrl+j, Ctrl+k, and Ctrl+l for split window navigation
+keybind = cmd+h=text:\x08
+keybind = cmd+j=text:\x0a
+keybind = cmd+k=text:\x0b
+keybind = cmd+l=text:\x0c
 
 # Remap command+p to send Ctrl+p for Telescope in Neovim
 keybind = cmd+p=text:\x10

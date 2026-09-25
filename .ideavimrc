@@ -34,4 +34,5 @@ Plug 'tpope/vim-commentary'
 "map \b <Action>(ToggleLineBreakpoint)
 
 set relativenumber
-set number
+set visualbell
+set noerrorbells
